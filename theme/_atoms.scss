@@ -1,6 +1,5 @@
 @use 'variables' as *;
 
-// mixins to take care of repeated patterns.
 @mixin set-font($size: 1em, $line-height: normal, $font: $fonts-body) {
   font-family: $font;
   font-size: $size;
@@ -23,7 +22,18 @@
   margin-top: 1em;
   padding-top: 1.5em;
 }
-// these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: $fonts-body;
+  font-size: 85%;
+  color: $text-dark;
+  background-color: $primary;
+  margin: 0;
+  padding: 1em;
+}
+
 h2,
 h4 {
   font-family: $font-art-deco;
@@ -35,6 +45,7 @@ h3
 }
 h1 {
   font-family: $font-art-deco-thin;
+  font-size: 2.333333em;
   background: $accent1;
   color: $text-dark;
   display: inline-block;
@@ -45,7 +56,7 @@ h1 {
 h2 {
   color: $text-dark;
   font-weight: 900; /* Heavy */
-  font-size: 6em;
+  font-size: 2em;
   letter-spacing: 1px;
   line-height: 1em;
 }

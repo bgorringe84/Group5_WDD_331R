@@ -1,0 +1,332 @@
+@import url(https://fonts.googleapis.com/css?family=Limelight);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: verdana, arial, sans-serif;
+  font-size: 85%;
+  color: #444C57;
+  background-color: #D3BFA6;
+  margin: 0;
+  padding: 1em;
+}
+
+h2,
+h4 {
+  font-family: Limelight;
+}
+
+h3 {
+  font-family: Poiret One;
+  margin: 0;
+}
+
+h1 {
+  font-family: Poiret One;
+  font-size: 2.333333em;
+  background: #C88D81;
+  color: #444C57;
+  display: inline-block;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  color: #444C57;
+  font-weight: 900; /* Heavy */
+  font-size: 2em;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-family: verdana, arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #444C57;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: #C88D81;
+}
+
+[role=banner] > h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.summary {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 0;
+  max-width: 50%;
+}
+.summary p:last-child {
+  border-top: 1px solid #C88D81;
+  margin-top: 1em;
+  padding-top: 1.5em;
+}
+.summary a {
+  color: #fff;
+}
+
+.preamble {
+  display: flex;
+  flex-wrap: wrap;
+}
+.preamble h3, .preamble p {
+  flex-basis: 100%;
+}
+.preamble h3::before {
+  content: "";
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 200px;
+  flex-basis: 100%;
+  order: -1;
+  background-image: url("art1.svg");
+}
+
+.explanation {
+  display: flex;
+  flex-wrap: wrap;
+}
+.explanation h3, .explanation p {
+  flex-basis: 100%;
+}
+.explanation h3::before {
+  content: "";
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 200px;
+  flex-basis: 100%;
+  order: -1;
+  background-image: url("art2.svg");
+}
+
+.participation {
+  display: flex;
+  flex-wrap: wrap;
+}
+.participation h3, .participation p {
+  flex-basis: 100%;
+}
+.participation h3::before {
+  content: "";
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 200px;
+  flex-basis: 100%;
+  order: -1;
+  background-image: url("art3.svg");
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits h3, .benefits p {
+  flex-basis: 100%;
+}
+.benefits h3::before {
+  content: "";
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 200px;
+  flex-basis: 100%;
+  order: -1;
+  background-image: url("art4.svg");
+}
+
+.requirements {
+  display: flex;
+  flex-wrap: wrap;
+}
+.requirements h3, .requirements p {
+  flex-basis: 100%;
+}
+.requirements h3::before {
+  content: "";
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 200px;
+  flex-basis: 100%;
+  order: -1;
+  background-image: url("art5.svg");
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.design-selection {
+  margin: 0 5rem;
+  /* Style the list items */
+  /* Style the header */
+}
+.design-selection li {
+  background-color: #C88D81;
+  border: solid 2px #194B55;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  /* Style the design name links */
+  /* Style the designer name links */
+}
+.design-selection li .design-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #444C57;
+}
+.design-selection li .design-name:hover {
+  color: #E5C469;
+}
+.design-selection li .designer-name {
+  font-size: 1rem;
+  color: #757670;
+  text-decoration: none;
+}
+.design-selection li .designer-name:hover {
+  color: #415457;
+}
+.design-selection .select {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.design-archives {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.design-archives h3 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.design-archives nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.design-archives nav ul li {
+  margin: 0.5rem;
+}
+.design-archives nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  background-color: #194B55;
+  color: #E5C469;
+  text-decoration: none;
+  border: 2px solid #757670;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.design-archives nav ul li a:hover {
+  background-color: #C88D81;
+  color: #194B55;
+}
+.design-archives nav ul li a .indicator {
+  margin-left: 0.5rem;
+}
+
+.zen-resources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
+.zen-resources .resources-title {
+  flex: 1 100%;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.zen-resources ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.zen-resources ul li {
+  margin: 1em;
+  text-align: center;
+}
+.zen-resources ul li a {
+  color: #415457;
+  text-decoration: none;
+  border: 2px solid #757670;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.zen-resources ul li a:hover {
+  background-color: #E5C469;
+  color: #444C57;
+}
+
+body {
+  padding: 5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  background-color: rgb(233, 233, 233);
+  padding: 6%;
+}
+
+/*# sourceMappingURL=style.css.map */
